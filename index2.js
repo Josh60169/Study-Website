@@ -41,6 +41,11 @@ $(document).ready(() => {
 
         if (questionNumber !== questionList.length)
             $("#question-p").text(questionList[questionNumber]);
+        else {
+            $("#main-div-1").fadeIn();
+            $("#main-div-2").fadeOut();
+            $("#correct-ans").text(`Percentage of correct Answers: ${(correctAns / questionList.length).toFixed(2)}`);
+        }
         
     });
 
