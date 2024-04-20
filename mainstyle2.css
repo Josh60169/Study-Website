@@ -1,0 +1,47 @@
+body {
+  background-image: url("https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+body main {
+  margin: 20px;
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+body #navbar ul {
+  list-style-type: none;
+}
+body #navbar ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Comforta;
+}
+body #navbar #pomodoro-btn {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
+body #navbar #qAndA-btn {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
+body #form-btns {
+  margin: 20px;
+}
+body #form-btns #add-btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  padding: auto;
+}
+body #form-btns #practice-btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  padding: auto;
+}
+
+/*# sourceMappingURL=mainstyle2.css.map */

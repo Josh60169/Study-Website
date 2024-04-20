@@ -1,0 +1,50 @@
+@mixin customizeButton($width, $height, $margin, $padding) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+    main {
+        margin: 20px;
+        padding: 40px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    #navbar {
+        ul {
+            list-style-type: none;
+    
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+                font-family: Comforta;
+            }
+        }
+    
+        #pomodoro-btn {
+            @include customizeButton(100%, 100%, auto, auto);
+        }
+    
+        #qAndA-btn {
+            @include customizeButton(100%, 100%, auto, auto);
+        }
+    }
+
+    #form-btns {
+        margin: 20px;
+
+        #add-btn {
+            @include customizeButton(200px, 50px, 10px, auto);
+        }
+
+        #practice-btn {
+            @include customizeButton(200px, 50px, 10px, auto);
+        }
+    }
+}
