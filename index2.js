@@ -42,9 +42,11 @@ $(document).ready(() => {
         if (questionNumber !== questionList.length)
             $("#question-p").text(questionList[questionNumber]);
         else {
-            $("#main-div-1").fadeIn();
-            $("#main-div-2").fadeOut();
-            $("#correct-ans").text(`Percentage of correct Answers: ${(correctAns / questionList.length).toFixed(2)}`);
+            setTimeout(() => {
+                $("#main-div-1").fadeIn();
+                $("#main-div-2").fadeOut();
+                $("#correct-ans").text(`Percentage of correct answers: ${((correctAns / questionList.length) * 100).toFixed(2)}%`);
+            }, 3000);
         }
         
     });
