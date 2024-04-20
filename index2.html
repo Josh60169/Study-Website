@@ -28,27 +28,38 @@
         <main>
             <h3 class="text-center">Question And Answers</h3>
 
-            <form class="form-control">
-                <div id="textboxes" class="row" style="display: flex; justify-content: center;">
-                    <div class="col-6"><input type="textbox" id="question-txtbox" class="form-control" placeholder="Enter Question" required></div>
-                    <div class="col-6"><input type="textbox" id="answer-txtbox" class="form-control" placeholder="Enter Answer" required></div>
+            <div id="main-div-1" style="display: block;">
+                <form class="form-control" id="enter-questions">
+                    <div id="textboxes" class="row" style="display: flex; justify-content: center;">
+                        <div class="col-6"><input type="textbox" id="question-txtbox" class="form-control" placeholder="Enter Question" required></div>
+                        <div class="col-6"><input type="textbox" id="answer-txtbox" class="form-control" placeholder="Enter Answer" required></div>
+                    </div>
+
+                    <div id="form-btns">
+                        <div id="add-div" style="display: flex; justify-content: center;"><button id="add-btn" type="submit" class="form-control btn btn-default btn-primary">Add</div>
+                        <div id="practice-div" style="display: flex; justify-content: center;"><button id="practice-btn" class="form-control btn btn-default btn-primary">Start Practice</div>
+                    </div>
+                </form>
+                
+
+                <div id="list-headers-div" class="row">
+                    <div class="col-6"><h4>Questions</h4></div>
+                    <div class="col-6"><h4>Answers</h4></div>
                 </div>
 
-                <div id="form-btns">
-                    <div id="add-div" style="display: flex; justify-content: center;"><button id="add-btn" type="submit" class="form-control btn btn-default btn-primary">Add</div>
-                    <div id="practice-div" style="display: flex; justify-content: center;"><button id="practice-btn" class="form-control btn btn-default btn-primary">Start Practice</div>
+                <div id="list-div" class="row text-center">
+                    <div class="col-6"><ul id="ul-questions" class="text-center"></ul></div>
+                    <div class="col-6"><ul id="ul-answers"></ul></div>
                 </div>
-            </form>
-            
-
-            <div id="list-headers-div" class="row">
-                <div class="col-6"><h4>Questions</h4></div>
-                <div class="col-6"><h4>Answers</h4></div>
             </div>
 
-            <div id="list-div" class="row text-center">
-                <div class="col-6"><ul id="ul-questions" class="text-center"></ul></div>
-                <div class="col-6"><ul id="ul-answers"></ul></div>
+            <div id="main-div-2" style="display: none;">
+                <form>
+                    <div><p id="question-p"></p></div>
+                    <input type="textbox" class="form-control" id="userAnswer-txtbox">
+                    <div style="display: flex; justify-content: center; margin: 20px;"><button class="form-btns btn btn-default btn-primary" id="check-btn">Check</button></div>
+                    <div><p id="answer-p"></p></div>
+                </form>
             </div>
         </main>
     </div>
