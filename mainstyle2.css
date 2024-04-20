@@ -43,5 +43,13 @@ body #form-btns #practice-btn {
   margin: 10px;
   padding: auto;
 }
+body #ul-questions {
+  list-style-position: inside;
+  text-align: center;
+}
+body #ul-answers {
+  list-style-type: none;
+  text-align: center;
+}
 
 /*# sourceMappingURL=mainstyle2.css.map */

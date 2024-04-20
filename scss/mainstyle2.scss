@@ -47,4 +47,14 @@ body {
             @include customizeButton(200px, 50px, 10px, auto);
         }
     }
+
+    #ul-questions {
+        list-style-position: inside;
+        text-align: center;
+    }
+
+    #ul-answers {
+        list-style-type: none;
+        text-align: center;
+    }
 }
