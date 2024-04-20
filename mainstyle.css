@@ -34,4 +34,8 @@ body main {
   padding: 2px;
 }
 
+#navbar ul {
+  list-style-type: none;
+}
+
 /*# sourceMappingURL=mainstyle.css.map */

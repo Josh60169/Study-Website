@@ -3,12 +3,16 @@ $(document).ready(() => {
     let pause = false;
     let studyVal;
     let breakVal;
-    let pomodoros = 0;
+    let longBreakVal;
+    let pomodoros = 3;
+    let longBreakFlag = false;
 
     $("#submit-btn").click((e) => {
         e.preventDefault();
         studyVal = $("#study-txtbox").val();
         breakVal = $("#shortbr-txtbox").val();
+        longBreakVal = $("#longbr-txtbox").val();
+        
 
         if (!(/\D/.test(studyVal)) && /\d/.test(studyVal)) {
             $("#timer").text(studyVal + ":00");
@@ -59,10 +63,13 @@ $(document).ready(() => {
             if (timerFinished)
                 document.getElementById("notification").play();
             
-            if ($("#timer-header").text() === "STUDY!") {
-                $("#timer-header").text("SHORT BREAK");
+            if ($("#timer-header").text() === "STUDY!" && !longBreakFlag) {
+                $("#timer-header").text("SHORT BREA!");
                 $("#timer").text(`${breakVal}:00`);
 
+            } else if ($("#timer-header").text() === "STUDY!" && longBreakFlag) {
+                $("#timer-header").text("LONG BREAK!");
+                $("#timer").text(`${longBreakVal}:00`);
             } else {
                 $("#timer-header").text("STUDY!");
                 $("#timer").text(`${studyVal}:00`);
@@ -78,8 +85,11 @@ $(document).ready(() => {
         let minutes = parseInt(time.substring(0, time.indexOf(":")));
 
         if (seconds === 0 && minutes === 0) {
-            return true;
             pomodoros++;
+            if (pomodoros % 4 === 0)
+                longBreakFlag = true;
+
+            return true;
         } else
             return false;
     }

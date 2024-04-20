@@ -38,3 +38,9 @@ body {
 #submit-btn {
     @include customizeButton(250px, 50px, 50px, 2px);
 }
+
+#navbar {
+    ul {
+        list-style-type: none;
+    }
+}
