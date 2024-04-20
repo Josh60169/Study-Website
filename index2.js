@@ -16,10 +16,10 @@ const renderList = () => {
     $("#ul-answers").empty();
 
     questionList.forEach((val) => {
-        $("#ul-questions").append(`<li>${val}</li>`);
+        $("#ul-questions").append(`<li class="overflow-auto" style="list-style-type: none; text-align: center;">${val}</li>`);
     });
 
     answerList.forEach((val) => {
-        $("#ul-answers").append(`<li>${val}</li>`);
+        $("#ul-answers").append(`<li class="overflow-auto" style="list-style-type: none; text-align: center;">${val}</li>`);
     });
 };
