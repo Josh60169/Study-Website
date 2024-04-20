@@ -4,16 +4,17 @@ $(document).ready(() => {
     let studyVal;
     let breakVal;
     let longBreakVal;
-    let pomodoros = 3;
+    let pomodoros = 0;
     let longBreakFlag = false;
 
+    // Checks when user submits information and updates the timer
     $("#submit-btn").click((e) => {
         e.preventDefault();
         studyVal = $("#study-txtbox").val();
         breakVal = $("#shortbr-txtbox").val();
         longBreakVal = $("#longbr-txtbox").val();
         
-
+        // Checks for a proper input
         if (!(/\D/.test(studyVal)) && /\d/.test(studyVal)) {
             $("#timer").text(studyVal + ":00");
             $("#timer-header").text("STUDY!");
@@ -22,6 +23,7 @@ $(document).ready(() => {
             alert("Please enter a numeric value with no spaces");
     });
 
+    // Starts the timer
     $("#start-btn").click(() => {
         if (/\d/.test($("#timer").text())) {
             runTimer = true;
@@ -33,11 +35,13 @@ $(document).ready(() => {
         }
     });
 
+    // Stops the timer
     $("#stop-btn").click(() => {
         runTimer = false;
         pause = true;
     });
 
+    // Subtracts second from timer
     const subtractSec = () => {
         if (pause)
             return;

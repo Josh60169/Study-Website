@@ -4,6 +4,8 @@ let correctAns = 0;
 let questionNumber = 0;
 
 $(document).ready(() => {
+
+    // Checks for a click on the button "Add" (Updates List)
     $("#add-btn").click((e) => {
         e.preventDefault();
 
@@ -12,6 +14,7 @@ $(document).ready(() => {
         renderList();
     });
 
+    // Checks for a click on the "Practice button" and starts the practice session
     $("#practice-btn").click(function(e) {
         e.preventDefault();
 
@@ -22,6 +25,7 @@ $(document).ready(() => {
     });
 
 
+    // checks if the check button is clicked
     $("#check-btn").click(function(e) {
         e.preventDefault();
 
@@ -43,9 +47,13 @@ $(document).ready(() => {
         
 });
 
+// Renders the list of questions and answers
 const renderList = () => {
+    // Clears both list elements
     $("#ul-questions").empty();
     $("#ul-answers").empty();
+
+    // Adds list elements to the list
 
     questionList.forEach((val) => {
         $("#ul-questions").append(`<li class="overflow-auto" style="list-style-type: none; text-align: center;">${val}</li>`);
