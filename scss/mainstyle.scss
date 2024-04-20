@@ -1,0 +1,20 @@
+#timer-screen {
+    #timer {
+        margin: 10px 100px 100px 100px;
+    }
+
+    #timer-header {
+        margin: 30px;
+    }
+}
+
+@mixin customizeButton($width, $height, $margin, $padding) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+#timer-btns-div {
+    
+}

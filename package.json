@@ -1,0 +1,15 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "buildSass": "nodemon -e scss -x \"sass scss/mainstyle.scss mainstyle.css\""
+  },
+  "keywords": [],
+  "author": "Yash Gupta",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
