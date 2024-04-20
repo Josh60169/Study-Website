@@ -18,10 +18,14 @@ $(document).ready(() => {
     $("#practice-btn").click(function(e) {
         e.preventDefault();
 
-        $("#main-div-1").fadeOut();
-        $("#main-div-2").fadeIn();
+        if (questionList.length != 0) {
+            $("#main-div-1").fadeOut();
+            $("#main-div-2").fadeIn();
 
-        $("#question-p").text(questionList[questionNumber]);
+            $("#question-p").text(questionList[questionNumber]);
+        } else
+            alert("Enter a question and answer.");
+
     });
 
 
