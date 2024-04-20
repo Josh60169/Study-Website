@@ -5,4 +5,33 @@
   margin: 30px;
 }
 
+#timer-btns-div #start-btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  padding: 2px;
+}
+#timer-btns-div #stop-btn {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  padding: 2px;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+body main {
+  margin: 20px;
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+#submit-btn {
+  width: 250px;
+  height: 50px;
+  margin: 50px;
+  padding: 2px;
+}
+
 /*# sourceMappingURL=mainstyle.css.map */

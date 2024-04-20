@@ -16,5 +16,25 @@
 }
 
 #timer-btns-div {
-    
+    #start-btn {
+        @include customizeButton(200px, 50px, 10px, 2px);
+    }
+
+    #stop-btn {
+        @include customizeButton(200px, 50px, 10px, 2px);
+    }
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+    main {
+        margin: 20px;
+        padding: 40px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+    }
+}
+
+#submit-btn {
+    @include customizeButton(250px, 50px, 50px, 2px);
 }
