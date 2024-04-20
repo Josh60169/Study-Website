@@ -30,15 +30,20 @@
 
             <form class="form-control">
                 <div id="textboxes" class="row" style="display: flex; justify-content: center;">
-                    <div class="col-6"><input type="textbox" id="study-txtbox" class="form-control" placeholder="Enter Question" required></div>
-                    <div class="col-6"><input type="textbox" id="shortbr-txtbox" class="form-control" placeholder="Enter Answer"></div>
+                    <div class="col-6"><input type="textbox" id="question-txtbox" class="form-control" placeholder="Enter Question" required></div>
+                    <div class="col-6"><input type="textbox" id="answer-txtbox" class="form-control" placeholder="Enter Answer" required></div>
                 </div>
 
                 <div id="form-btns">
-                    <div id="submit-div" style="display: flex; justify-content: center;"><button id="add-btn" type="submit" class="form-control btn btn-default btn-primary">Add</div>
-                    <div id="submit-div" style="display: flex; justify-content: center;"><button id="practice-btn" class="form-control btn btn-default btn-primary">Start Practice</div>
+                    <div id="add-div" style="display: flex; justify-content: center;"><button id="add-btn" type="submit" class="form-control btn btn-default btn-primary">Add</div>
+                    <div id="practice-div" style="display: flex; justify-content: center;"><button id="practice-btn" class="form-control btn btn-default btn-primary">Start Practice</div>
                 </div>
             </form>
+            
+            <div id="list-div" class="row">
+                <div class="col-6"><ul id="ul-questions" class="text-center"></ul></div>
+                <div class="col-6"><ul id="ul-answers"></ul></div>
+            </div>
         </main>
     </div>
 </body>
