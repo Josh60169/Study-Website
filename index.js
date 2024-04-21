@@ -68,7 +68,7 @@ $(document).ready(() => {
                 document.getElementById("notification").play();
             
             if ($("#timer-header").text() === "STUDY!" && !longBreakFlag) {
-                $("#timer-header").text("SHORT BREA!");
+                $("#timer-header").text("SHORT BREAK!");
                 $("#timer").text(`${breakVal}:00`);
 
             } else if ($("#timer-header").text() === "STUDY!" && longBreakFlag) {
